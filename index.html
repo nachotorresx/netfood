@@ -19,7 +19,8 @@
   a{color:#09678D;text-decoration:none}
   a:hover{color:#B8431F}
   img{display:block}
-  #page{max-width:1240px;margin:0 auto}
+  #page{width:100%}
+  #page > div{padding-left:clamp(20px,5vw,140px) !important;padding-right:clamp(20px,5vw,140px) !important}
   @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
   .rv.in{opacity:1;transform:none}
@@ -55,7 +56,7 @@
 <div style="background:#F0885F;color:#06303F;padding:16px 24px;border-radius:4px;font:700 15px Archivo,sans-serif">Pedir lista de precios</div>
 <div style="border:1px solid rgba(242,239,233,.35);color:#F2EFE9;padding:16px 24px;border-radius:4px;font:700 15px Archivo,sans-serif">Hablar con un asesor</div>
 </div>
-<div style="display:flex;gap:26px;padding-top:12px;font:600 11.5px Archivo,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,239,233,.9)"><span>Entrega en 48 h</span><span>Cuenta corriente</span><span>Sin costo de envío</span></div>
+<div style="display:flex;gap:26px;padding-top:12px;font:600 11.5px Archivo,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,239,233,.9)"><span>Entrega en 48 h</span><span>Lista de precios quincenal</span><span>Sin costo de envío</span></div>
 </div>
 </div>
 
@@ -150,22 +151,18 @@
 
 <div class="rv" style="padding:72px 40px">
 <h2 style="margin:0 0 20px;font:800 40px/1 Archivo,sans-serif;letter-spacing:-.035em">Preguntas frecuentes</h2>
-<div style="border-top:1px solid rgba(10,46,66,.15)">
-<div style="border-bottom:1px solid rgba(10,46,66,.15)">
+<div style="border-top:1px solid rgba(9,103,141,.18)">
+<div style="border-bottom:1px solid rgba(9,103,141,.18)">
 <div data-faq="0" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Hay pedido mínimo?</span><span style="color:#09678D;font-size:20px">+</span></div>
-<div class="faq-a" data-faq-a="0" data-open="1"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(10,46,66,.65)">Sí, y depende de la zona. En Tandil arranca más bajo que en el interior; tu asesor te confirma el monto al abrir la cuenta.</p></div>
+<div class="faq-a" data-faq-a="0" data-open><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(6,48,63,.7)">Sí, varía según la zona de reparto. En Tandil arranca más bajo que en el interior; tu asesor te confirma el monto antes del primer envío.</p></div>
 </div>
-<div style="border-bottom:1px solid rgba(10,46,66,.15)">
-<div data-faq="1" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Cómo abro una cuenta?</span><span style="color:#09678D;font-size:20px">+</span></div>
-<div class="faq-a" data-faq-a="1"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(10,46,66,.65)">Nos escribís por WhatsApp con el nombre del negocio, rubro y localidad. En el día te enviamos la lista de precios vigente.</p></div>
+<div style="border-bottom:1px solid rgba(9,103,141,.18)">
+<div data-faq="1" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Cómo hago el primer pedido?</span><span style="color:#09678D;font-size:20px">+</span></div>
+<div class="faq-a" data-faq-a="1"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(6,48,63,.7)">Escribinos por WhatsApp con tu rubro y localidad. Te enviamos la lista de precios vigente y coordinamos el día de reparto.</p></div>
 </div>
-<div style="border-bottom:1px solid rgba(10,46,66,.15)">
-<div data-faq="2" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Trabajan con cuenta corriente?</span><span style="color:#09678D;font-size:20px">+</span></div>
-<div class="faq-a" data-faq-a="2"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(10,46,66,.65)">Sí, para clientes con historial de compra. También aceptamos transferencia y efectivo contra entrega.</p></div>
-</div>
-<div style="border-bottom:1px solid rgba(10,46,66,.15)">
-<div data-faq="3" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Venden a consumidor final?</span><span style="color:#09678D;font-size:20px">+</span></div>
-<div class="faq-a" data-faq-a="3"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(10,46,66,.65)">Nuestro foco es el canal mayorista, pero vendemos cajas cerradas para eventos y consorcios.</p></div>
+<div style="border-bottom:1px solid rgba(9,103,141,.18)">
+<div data-faq="2" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;cursor:pointer;font:700 17px Archivo,sans-serif;letter-spacing:-.01em"><span>¿Qué formas de pago aceptan?</span><span style="color:#09678D;font-size:20px">+</span></div>
+<div class="faq-a" data-faq-a="2"><p style="margin:0;padding:0 0 18px;max-width:640px;font:400 15px/1.65 Archivo,sans-serif;color:rgba(6,48,63,.7)">Efectivo contra entrega y transferencia. No trabajamos con cuenta corriente.</p></div>
 </div>
 </div>
 </div>
