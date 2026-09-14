@@ -15,12 +15,11 @@
 <style>
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:#F2EFE9;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:#F2EFE9;font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased;width:100%;overflow-x:hidden}
   a{color:#09678D;text-decoration:none}
   a:hover{color:#B8431F}
   img{display:block}
   #page{width:100%}
-  #page > div{padding-left:clamp(20px,5vw,140px) !important;padding-right:clamp(20px,5vw,140px) !important}
   @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
   .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
   .rv.in{opacity:1;transform:none}
@@ -39,7 +38,7 @@
 <body>
 <div id="page" style="background:#F2EFE9;color:#09678D;font-family:Archivo,sans-serif">
 
-<div style="display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; color: #F2EFE9; background-color: #09678D">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 18px 5vw; color: #F2EFE9; background-color: #09678D">
 <img fetchpriority="high" src="assets/logo.jpg" alt="Net Food" style="height:60px;width:60px;object-fit:cover;border-radius:5px;flex:none">
 <div style="display:flex;gap:24px;font:600 11.5px Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(242,239,233,.9)"><span>Productos</span><span>Marcas</span><span>Reparto</span><span>Nosotros</span><span>FAQ</span></div>
 <div style="background:#F0885F;color:#06303F;padding:10px 18px;border-radius:4px;font:700 13.5px Archivo,sans-serif">Pedir lista de precios</div>
@@ -48,7 +47,7 @@
 <div class="rv" style="position:relative;min-height:500px;display:flex;align-items:center;color:#F2EFE9">
 <img loading="lazy" decoding="async" src="assets/picada.jpg" alt="Tabla de picada con fiambres Cagnoli" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
 <div style="position:absolute;inset:0;background:linear-gradient(95deg,rgba(6,48,63,.94) 0%,rgba(6,48,63,.82) 48%,rgba(6,48,63,.18) 100%)"></div>
-<div style="position:relative;padding:76px 44px;max-width:620px;display:flex;flex-direction:column;gap:22px;justify-content:center">
+<div style="position:relative;padding:76px 5vw;max-width:620px;display:flex;flex-direction:column;gap:22px;justify-content:center">
 <span style="align-self:flex-start;font:700 11.5px Archivo,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#FFCDB4">Mayorista · Fiambres, quesos, lácteos y almacén</span>
 <h1 style="margin:0;font:800 58px/1 Archivo,sans-serif;letter-spacing:-.035em;text-wrap:balance">Tu proveedor de alimentos, en una sola lista</h1>
 <p style="margin:0;font:400 17.5px/1.6 Archivo,sans-serif;color:rgba(242,239,233,.9);max-width:450px">Abastecemos locales gastronómicos, comercios y hotelería con 22 marcas reconocidas, precios por volumen y reparto propio.</p>
@@ -60,7 +59,7 @@
 </div>
 </div>
 
-<div class="rv" style="padding:18px 40px;background:#EDE8DC;border-top:1px solid rgba(10,46,66,.08);border-bottom:1px solid rgba(10,46,66,.08);display:flex;align-items:center;gap:26px;overflow:hidden">
+<div class="rv" style="padding:18px 5vw;background:#EDE8DC;border-top:1px solid rgba(10,46,66,.08);border-bottom:1px solid rgba(10,46,66,.08);display:flex;align-items:center;gap:26px;overflow:hidden">
 <span style="font:700 11px Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(10,46,66,.45);flex:none">Marcas que distribuimos</span>
 <div style="flex:1;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 40px,#000 calc(100% - 40px),transparent)">
 <div style="display:flex;gap:30px;width:max-content;animation:marq 26s linear infinite;font:800 18px Archivo,sans-serif;letter-spacing:-.02em;color:rgba(10,46,66,.4);white-space:nowrap;transition:color .25s" style-hover="animation-play-state:paused;color:#09678D;letter-spacing:-.01em">
@@ -70,7 +69,7 @@
 </div>
 </div>
 
-<div class="rv" style="background: #F2EFE9; padding: 72px 40px">
+<div class="rv" style="background: #F2EFE9; padding: 72px 5vw">
 <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:30px">
 <h2 style="margin:0;font:800 46px/1 Archivo,sans-serif;letter-spacing:-.035em;max-width:460px">Qué distribuimos</h2>
 <p style="margin:0;font:400 15px/1.6 Archivo,sans-serif;color:rgba(10,46,66,.6);max-width:360px">Tres grandes familias, 22 marcas y más de 350 artículos con stock permanente.</p>
@@ -99,7 +98,7 @@
 
 
 
-<div class="rv" style="padding:72px 40px">
+<div class="rv" style="padding:72px 5vw">
 <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:26px">
 <h2 style="margin:0;font:800 46px/1 Archivo,sans-serif;letter-spacing:-.035em;max-width:520px">Lo que más sale esta semana</h2>
 <span style="font:700 13px Archivo,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#09678D">Catálogo completo →</span>
@@ -121,7 +120,9 @@
 <div style="position:relative;box-sizing:border-box;height:100%;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff"><div style="font:700 11.5px Archivo,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FFCDB4">Cagnoli</div><h3 style="margin:8px 0 4px;font:800 24px/1.05 Archivo,sans-serif;letter-spacing:-.025em">Salamín Tandilero ATM 145 gr</h3><p style="margin:0;font:400 14px/1.5 Archivo,sans-serif;color:rgba(255,255,255,.82)">Fino, grueso, ahumado o picante.</p></div>
 </div>
 </div>
-</div><div class="rv" style="color: #F2EFE9; padding: 72px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; background-color: #09678D">
+</div>
+
+<div class="rv" style="color: #F2EFE9; padding: 72px 5vw; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; background-color: #09678D">
 <div style="display:flex;flex-direction:column;gap:18px">
 <h2 style="margin:0;font:800 46px/1 Archivo,sans-serif;letter-spacing:-.035em">Dónde entregamos</h2>
 <p style="margin:0;font:400 15.5px/1.6 Archivo,sans-serif;color:rgba(242,239,233,.88);max-width:400px">Flota propia con reparto programado. Pedidos hasta las 18 h se despachan al día siguiente.</p>
@@ -135,7 +136,7 @@
 <div style="border-radius:6px;overflow:hidden;min-height:320px;background:#F2EFE9"><img loading="lazy" decoding="async" src="assets/mapa-cobertura.png" alt="Mapa de cobertura: Tandil, Azul, Olavarría, Rauch, Benito Juárez, Balcarce y zona" style="width:100%;height:320px;object-fit:cover"></div>
 </div>
 
-<div class="rv" style="background:#F2EFE9;padding:72px 40px;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center">
+<div class="rv" style="background:#F2EFE9;padding:72px 5vw;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center">
 <div style="border-radius:6px;overflow:hidden;height:360px"><img loading="lazy" decoding="async" src="assets/somos-distribuidores.jpg" alt="Somos distribuidores Net Food" style="width:100%;height:100%;object-fit:cover;object-position:center 62%"></div>
 <div>
 <span style="font:700 11.5px Archivo,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#B8431F">Nosotros</span>
@@ -149,7 +150,7 @@
 </div>
 </div>
 
-<div class="rv" style="padding:72px 40px">
+<div class="rv" style="padding:72px 5vw">
 <h2 style="margin:0 0 20px;font:800 40px/1 Archivo,sans-serif;letter-spacing:-.035em">Preguntas frecuentes</h2>
 <div style="border-top:1px solid rgba(9,103,141,.18)">
 <div style="border-bottom:1px solid rgba(9,103,141,.18)">
@@ -167,7 +168,7 @@
 </div>
 </div>
 
-<div class="rv" style="color: #F2EFE9; padding: 56px 40px; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; background-color: #09678D">
+<div class="rv" style="color: #F2EFE9; padding: 56px 5vw; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; background-color: #09678D">
 <div style="display:flex;flex-direction:column;gap:14px">
 
 <div style="width:260px;max-width:100%;display:flex;justify-content:center"><div role="img" aria-label="Net Food" style="width: 133px; height: 64px; border-radius: 4px; background-image: url(assets/logo.jpg); background-repeat: no-repeat; background-size: 155px 155px; background-position: -12px -40px"></div></div><p style="margin:0;font:400 14.5px/1.6 Archivo,sans-serif;color:rgba(242,239,233,.86);max-width:280px">Soluciones que alimentan tu negocio.</p>
